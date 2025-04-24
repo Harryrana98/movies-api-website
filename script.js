@@ -38,6 +38,10 @@ form.addEventListener("submit", showData);
 
 async function showData(e) {
   e.preventDefault();
+  if(input.value===""){
+    alert("Please Enter A Movie Name")
+    return;
+  }
   // wrapper.style.display = "none";
   
   const searchInput = input.value.trim();
