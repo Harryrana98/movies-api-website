@@ -30,7 +30,7 @@
 {
     width: 100%;
     height: 100vh;
-    background-image: url('https://wallpapers.com/images/featured/movie-9pvmdtvz4cb0xl37.jpg');
+    /* background-image: url('https://wallpapers.com/images/featured/movie-9pvmdtvz4cb0xl37.jpg'); */
 }
 #wrapper form
 {
@@ -45,6 +45,12 @@
     border: none;
     font-size: 1rem;
     font-weight: 500;
+    box-shadow: 1px 1px 10px black;
+}
+
+#result{
+    /* min-height: 100vh; */
+    overflow: scrollY;
 }
 
 #result div{
@@ -73,4 +79,5 @@ form input {
 div h2
 {
     font-size: x-small;
+    /* color: #fff; */
 }

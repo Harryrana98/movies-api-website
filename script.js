@@ -38,15 +38,19 @@ form.addEventListener("submit", showData);
 
 async function showData(e) {
   e.preventDefault();
-  wrapper.style.display = "none";
+  // wrapper.style.display = "none";
+  
   const searchInput = input.value.trim();
   const response = await fetch(URL + "&query=" + searchInput);
   const result = await response.json();
   console.log(result.results);
   displayMovieOnScreen(result.results);
+  input.value=" "
 }
+input.focus()
 
 function displayMovieOnScreen(arr) {
+  result.innerHTML=" "
   arr.forEach((movie) => {
     if (movie.poster_path !== null) {
       const movieImg = document.createElement("img");
